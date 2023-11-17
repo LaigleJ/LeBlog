@@ -13,7 +13,7 @@ export default function Home(props: any) {
     name: "",
     subject: "",
     message: "",
-  }); 
+  });  
 
   function handleSubmit(evt: any) {
     evt.preventDefault();
