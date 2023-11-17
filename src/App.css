@@ -1,0 +1,50 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.messagerie {
+  background-color: gray;
+  width: 500px;
+  height: auto;
+  display: auto;
+  justify-content: center;
+}
+
+.message {
+  margin: auto;
+  background-color: lightgrey;
+ border: 0px solid;
+  width: 475px;
+  height: 100px;
+}
+
+.contact {
+  border-top: 1px solid;
+  border-left: 1px solid;
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+  color: black;
+  width: 200px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.blockleft {
+  float: left;
+}
+
+.blockRight {
+  float: right;
+}
