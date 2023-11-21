@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Item from "../../Components/item";
 
 export default function Blog(props: any) {
     const {items} = props;
@@ -13,9 +14,8 @@ export default function Blog(props: any) {
         {
             items.map((item:any, index:any) => (
                 <div key={index}>
-                    <h5> {item.title} </h5>
-                    {new Date().getDate()}.{new Date().getMonth()}.{new Date().getFullYear()}
-                    <p> {item.description} </p>
+                    
+                    <Item item={item} index={index} />
                 </div>
             )
         )}

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Message from "../../Components/Message";
 
 export default function Home(props: any) {
   const { handleSubmitMessage, messages, items } = props;
@@ -13,7 +14,7 @@ export default function Home(props: any) {
     name: "",
     subject: "",
     message: "",
-  });  
+  });   
 
   function handleSubmit(evt: any) {
     evt.preventDefault();
@@ -35,16 +36,7 @@ export default function Home(props: any) {
         <h2>Boite de reception des messages</h2>
         <div className="messagerie">
           {messages.map((message: any, index: any) => (
-            <div key={index} className="message">
-              
-                <p>
-                  Nom: {message.name} Sujet: {message.subject} Message:{" "}
-                  {message.message} <input type="submit" value="Voir" />
-                </p>
-                {new Date().getDate()}.{new Date().getMonth()}.
-                {new Date().getFullYear()} <br />
-             
-            </div>
+            <div key={index} className="message"><Message message= {message} index= {index} /></div>
           ))}
         </div>
         <h2>Le dernier article</h2>
